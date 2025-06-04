@@ -1,0 +1,126 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ========== Body ========== */
+body{
+    background-image: url(images/4.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* ========== Container ========== */
+
+.container{
+    margin: 100px 15px;
+}
+
+.form-box{
+    width: 100%;
+    max-width: 450px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.form-box.active{
+    display: block;
+}
+
+h2{
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input,
+select{
+    width: 100%;
+    padding: 12px;
+    background: #eee;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+button{
+    width: 100%;
+    padding: 12px;
+    background: #7494ec;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: background 0.3s ease;
+}
+
+button:hover{
+    background: #5a7adf;
+}
+
+p{
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+p a{
+    color: #7494ec;
+    text-decoration: none;
+}
+
+p a:hover{
+    text-decoration: underline;
+}
+
+
+/* ========== Header ========== */
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img{
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+/* ========== Error Message ========== */
+
+.error-message{
+    padding: 12px;
+    background: #f8d7da;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #a42834;
+    text-align: center;
+    margin-bottom: 20px;
+}
